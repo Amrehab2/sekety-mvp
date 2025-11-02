@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "preinstall": "rm -rf node_modules package-lock.json || true",
     "dev": "vite",
-    "build": "chmod +x ./node_modules/.bin/vite && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "vercel-build": "npm ci && npm run build"
   },
