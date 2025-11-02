@@ -1,17 +1,15 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Traveler from "./pages/Traveler";
-import Admin from "./pages/Admin";
-import Navbar from "./components/Navbar";
-
-export default function App() {
-    return (
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Traveler />} />
-                <Route path="/admin" element={<Admin />} />
-            </Routes>
-        </BrowserRouter>
-    );
+function App() {
+  return (
+    <div style={{
+      textAlign: 'center',
+      marginTop: '20%',
+      fontFamily: 'Arial, sans-serif',
+      color: '#222'
+    }}>
+      <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Sekety — سكتك سالكة</h1>
+      <p style={{ fontSize: '1.25rem' }}>Smart Mobility Powered by Data</p>
+    </div>
+  )
 }
+
+export default App
