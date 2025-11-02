@@ -1,17 +1,11 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Traveler from "./pages/Traveler";
-import Admin from "./pages/Admin";
-import Navbar from "./components/Navbar";
-
-export default function App() {
-    return (
-        <BrowserRouter>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Traveler />} />
-                <Route path="/admin" element={<Admin />} />
-            </Routes>
-        </BrowserRouter>
-    );
+function App() {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Sekety — سكتك سالكة</h1>
+      <p>Smart Mobility Powered by Data</p>
+      <p>Welcome to Sekety! Egypt’s data-powered transportation ecosystem.</p>
+    </div>
+  )
 }
+
+export default App
